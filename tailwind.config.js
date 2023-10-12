@@ -1,6 +1,12 @@
 module.exports = {
   content: ["./node_modules/flowbite/**/*.js"],
   theme: {
+    colors: {
+      primary: "#FFB703",
+      secondary: "#6c757d",
+      third: "#0C556E",
+      background: "#023047",
+    },
     spacing: {
       px: "1px",
       0: "0",
