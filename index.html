@@ -24,13 +24,13 @@
   </style>
   <body>
     <div class="mx-auto">
-      <nav class="bg-[#023047]">
+      <nav class="bg-[#023047] relative z-40">
         <div
           class="container flex items-center justify-between mx-auto px-6 py-5"
         >
           <!-- Desktop -->
           <div class="flex items-center">
-            <a href="#">
+            <a href="index.html">
               <img
                 src="assets/images/logo.png"
                 class="mr-20"
@@ -38,23 +38,23 @@
               />
             </a>
             <div class="hidden lg:block">
-              <a class="text-white hover:text-gray-200 mx-4" href="#"> Home </a>
-              <a class="text-white hover:text-gray-200 mx-4" href="#">
+              <a class="text-white hover:text-gray-200 mx-4" href="index.html"> Home </a>
+              <a class="text-white hover:text-gray-200 mx-4" href="pages/category.html">
                 Category
               </a>
-              <a class="text-white hover:text-gray-200 mx-4" href="#">
+              <a class="text-white hover:text-gray-200 mx-4" href="pages/article.html">
                 Article
               </a>
-              <a class="text-white hover:text-gray-200 mx-4" href="#">
+              <a class="text-white hover:text-gray-200 mx-4" href="pages/ourbusiness.html">
                 Our Business
               </a>
             </div>
           </div>
           <div class="items-center hidden lg:flex">
-            <a class="text-white hover:text-gray-200 mx-4" href="#"> Login </a>
+            <a class="text-white hover:text-gray-200 mx-4" href="pages/login.html"> Login </a>
             <a
               class="bg-[#ffb703] text-gray-800 font-semibold py-2 px-4 rounded shadow mx-4"
-              href="#"
+              href="pages/register.html"
               >Register</a
             >
           </div>
@@ -124,20 +124,21 @@
           </div>
         </div>
       </nav>
-      <!-- <div class="lg:flex justify-center mx-auto lg:my-10 gap-10">
+
+      <div class="lg:flex justify-center m-10 lg:mx-auto lg:my-10 gap-10">
         <div class="relative">
-          <img src="assets/images/index1.png" alt="" />
-          <div class="absolute bottom-5 left-10 lg:bottom-10 lg:left-20">
-            <h1 class="lg:text-3xl lg:tracking-wide text-white text-lg">
+          <img src="assets/images/index1.png" class="rounded-md" alt="" />
+          <div class="absolute bottom-5 left-4 lg:bottom-10 lg:left-20">
+            <h1 class="lg:text-3xl lg:tracking-wide text-white text-sm">
               Bagikan momen dengan orang tersayang
             </h1>
-            <a href="#" class="lg:text-3xl text-white tracking-wide text-lg"
+            <a href="#" class="lg:text-3xl text-white tracking-wide text-sm"
               >Cek inspirasinya >
             </a>
           </div>
         </div>
         <div class="hidden lg:block lg:relative">
-          <img src="assets/images/Low-Fi Placeholder.png" alt="" />
+          <img src="assets/images/Low-Fi Placeholder.png" class="rounded-md" alt="" />
           <div
             class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-left"
           >
@@ -149,35 +150,53 @@
             </a>
           </div>
         </div>
-      </div> -->
+      </div>
+
+      <div class="lg:flex justify-center m-10 lg:mx-auto lg:my-10 gap-10">
+        <img class="rounded-md" src="./assets/images/about.png" alt="" />
+      <div class="content">
+        <p>
+          <span>Furnivul</span> berdiri sejak nenek moyang telah lahir
+          menggunakan goresan
+          <br />
+          tangan sesepuh, dengan kearifan lokal yang mendunia disamping <br />
+          keadaan manusia yang telah berprasangka baik ke semua.
+        </p>
+        <a href="#category"
+          ><span>Category product </span
+          ><img src="./assets/images/arrow-right.png" alt=""
+        /></a>
+      </div>
+      </div>
+
       <footer class="bg-[#023047] p-4 text-white">
         <div class="flex flex-col lg:flex-row w-4/5 border-t-2 border-b-2 mt-20 mx-auto">
           <div class="mx-auto my-8 py-10">
-            <img src="assets/images/logo-text.png" alt="" />
-            <p class="tracking-widest py-10 font-bold mt-4">
-              <span>Furnivul</span> berdiri sejak nenek moyang <br />
+            <img src="assets/images/logo-text.png" class="block mx-auto lg:mx-0" alt="" />
+            <p class="tracking-widest p-4 lg:py-10 font-thin lg:font-bold mt-4 text-justify">
+              <span class="text-[#ffb703]">Furnivul</span> berdiri sejak nenek moyang <br />
               telah lahir menggunakan goresan <br />
               tangan sesepuh, dengan kearifan lokal yang mendunia.
             </p>
           </div>
-          <div class="flex justify-center my-8 mx-auto">
+          <div class="flex justify-center my-8 mx-auto lg:py-10">
             <div class="grid grid-cols-3 gap-10 lg:gap-32">
-              <div class="flex flex-col my-4">
-                <a class="mb-8 w-max" href="#home">Home</a>
+              <div class="flex flex-col">
+                <a class="mb-8 w-max underline" href="#home">Home</a>
                 <a class="my-4" href="#">Bedroom</a>
                 <a class="my-4" href="#">Livingroom</a>
                 <a class="my-4" href="#">Kitchen</a>
                 <a class=" my-4" href="#">Diningroom</a>
               </div>
-              <div class="flex flex-col my-4">
-                <a class="mb-8 w-max" href="#category">Category</a>
+              <div class="flex flex-col">
+                <a class="mb-8 w-max underline" href="#category">Category</a>
                 <a class="my-4" href="#">Workspace</a>
                 <a class="my-4" href="#">Outdoor</a>
                 <a class="my-4" href="#">Children</a>
                 <a class="my-4" href="#">Accessories</a>
               </div>
-              <div class="flex flex-col my-4">
-                <a class="mb-8 w-max" href="#business">Our Business</a>
+              <div class="flex flex-col">
+                <a class="mb-8 w-max underline" href="#business">Our Business</a>
                 <a class="my-4" href="#">Article</a>
                 <a class="my-4" href="#">Investment</a>
                 <a class="my-4" href="#">Resources</a>
