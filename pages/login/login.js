@@ -1,36 +1,19 @@
-const loginForm = document.getElementById("login-form");
+let btnSend = document.getElementById("btn-login");
 
-loginForm.addEventListener("submit", function (e) {
-  e.preventDefault();
+btnSend.addEventListener("click", () => {
+  let newUser = {
+    email: document.getElementById("email").value,
+    password: document.getElementById("password").value,
+  };
 
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-
-  //url
-  const apiUrl = "https://65274ef6917d673fd76d8edf.mockapi.io/usersFurnivul";
-
-  // Kirim permintaan ke MockAPI
-  fetch(apiUrl, {
-    method: "GET",
+  fetch("https://65274ef6917d673fd76d8edf.mockapi.io/usersFurnivul", {
+    method: "GET", // or 'PUT'
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ email, password }),
-  })
-    .then((response) => {
-      if (response.ok) {
-        return response.json();
-      } else {
-        throw new Error("Login gagal.");
-      }
-    })
-    .then((data) => {
-      // Data yang diterima dari MockAPI
-      console.log("Login berhasil:", data);
-      alert("Login berhasil");
-    })
-    .catch((error) => {
-      console.error("Login gagal:", error);
-      alert("Login gagal");
-    });
+    body: JSON.stringify(newUser),
+  }).then((res) => {
+    alert("akun anda berhasil dibuat");
+    console.log(res);
+  });
 });
