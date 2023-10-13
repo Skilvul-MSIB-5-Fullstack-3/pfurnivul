@@ -14,7 +14,7 @@ btnSend.addEventListener("click", () => {
     },
     body: JSON.stringify(newUser),
   }).then((res) => {
-    alert("akun anda berhasil dibuats");
+    alert("akun anda berhasil dibuat");
     console.log(res);
   });
 });
