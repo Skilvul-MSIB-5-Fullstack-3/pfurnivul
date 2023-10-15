@@ -22,7 +22,7 @@ const swiper = new Swiper(".swiper-container", {
       spaceBetween: 30,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 5,
       spaceBetween: 40,
     },
   },
@@ -41,11 +41,11 @@ async function getProducts() {
     const products = data.map(function (product) {
       return `
       <div class="swiper-slide">
-      <div class="flex lg:flex-col flex-col p-4 bg-[#023047] border border-black rounded-xl mx-4 w-max">
+      <div class="flex lg:flex-col flex-col p-4 bg-[#023047] border border-black rounded-xl mx-auto w-max">
         <img
           src="${product.product_image}"
           alt="living room"
-          class="rounded-xl w-[200px] h-[182px] object-contain"
+          class="flex mx-auto rounded-xl w-[200px] h-[182px] object-contain"
         />
         <div class="my-2 text-white">
           <h3 class="text-lg font-semibold my-4">${
