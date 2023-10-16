@@ -45,7 +45,7 @@ async function getProducts() {
         <img
           src="${product.product_image}"
           alt="living room"
-          class="flex mx-auto rounded-xl w-[200px] h-[182px] object-contain"
+          class="flex bg-white mx-auto rounded-xl w-[200px] h-[182px] object-contain"
         />
         <div class="my-2 text-white">
           <h3 class="text-lg font-semibold my-4">${
