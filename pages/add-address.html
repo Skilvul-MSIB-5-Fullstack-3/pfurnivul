@@ -244,16 +244,16 @@
           <label
             for="kota-kabupaten"
             class="block text-sm font-medium text-gray-900 dark:text-white"
-            >Kota/Kabupaten</label
-          >
+            >Kota/Kabupaten</label>
           <select
             id="kota-kabupaten"
             name="kota-kabupaten"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           >
-            <option value="kota1">Samarinda</option>
-            <option value="kota2">Kota/Kabupaten 2</option>
-            <option value="kota3">Kota/Kabupaten 3</option>
+            <option value="Samarinda">Samarinda</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Jakarta">Jakarta</option>
           </select>
         </div>
         <div class="mb-6">
@@ -267,9 +267,9 @@
             name="kecamatan"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           >
-            <option value="kecamatan1">Samarinda Ulu</option>
-            <option value="kecamatan2">Kecamatan 2</option>
-            <option value="kecamatan3">Kecamatan 3</option>
+            <option value="Samarinda Ulu">Samarinda Ulu</option>
+            <option value="Grogol">Grogol</option>
+            <option value="cengkareng">Cengkareng</option>
           </select>
         </div>
         <div class="mb-6">
@@ -283,9 +283,9 @@
             name="kode-pos"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           >
-            <option value="kodepos1">75123</option>
-            <option value="kodepos2">Kode Pos 2</option>
-            <option value="kodepos3">Kode Pos 3</option>
+            <option value="75123">75123</option>
+            <option value="75124">75124</option>
+            <option value="7338">7338</option>
           </select>
         </div>
 
@@ -307,13 +307,18 @@
         const email = document.getElementById("email").value;
         const telephone = document.getElementById("telephone").value;
         const provinsi = document.getElementById("provinsi").value;
-
+    
         const kotaKabupaten = document.getElementById("kota-kabupaten").value;
         const kecamatan = document.getElementById("kecamatan").value;
         const kodePos = document.getElementById("kode-pos").value;
         const rt = document.getElementById("rt").value;
         const rw = document.getElementById("rw").value;
-
+    
+        if (email.trim() === '' || telephone.trim() === '') {
+          alert('Email dan Nomor Telepon harus diisi.');
+          return;
+        }
+    
         const addressData = {
           fullName,
           email,
@@ -325,17 +330,15 @@
           rt,
           rw,
         };
-
+    
         localStorage.setItem("addressData", JSON.stringify(addressData));
-
+    
         window.location.href = "address.html";
       });
-
-      document
-        .getElementById("tambah-alamat")
-        .addEventListener("click", function () {
-          window.location.href = "add-address.html";
-        });
+    
+      document.getElementById("tambah-alamat").addEventListener("click", function () {
+        window.location.href = "add-address.html";
+      });
     </script>
   </body>
 </html>
