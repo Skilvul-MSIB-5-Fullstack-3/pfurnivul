@@ -1,0 +1,14 @@
+body {
+  display: block;
+  width: 80%;
+  gap: 10px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+.breadcrumb {
+  margin-top: 20px;
+  margin-left: (-40px);
+  padding: 0;
+}
