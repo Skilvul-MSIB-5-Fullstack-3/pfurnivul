@@ -15,13 +15,13 @@ async function getProductListing() {
     });
     let productCard = `
     
-    <div class="flex justify-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 p-auto mx-(-8)">
+    <div class="flex justify-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4  ">
     <a href="">
         <img class="rounded-t-lg w-[150px] h-[100px]" src="${product.product_image}" alt="product image" />
     </a>
-    <div class="px-8 mx-8 pb-8 pt-8 mt-8">
+    <div class=" pt-8 gap-4 mt-8">
         <a href="">
-            <h5 class="text-xl font-semibold  text-gray-900 dark:text-white">${product.product_name}</h5>
+            <h5 class="text-xl font-semibold  text-gray-900 dark:text-white ml-8">${product.product_name}</h5>
         </a>
         <div class="flex items-center mt-2.5 mb-5">
             <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
