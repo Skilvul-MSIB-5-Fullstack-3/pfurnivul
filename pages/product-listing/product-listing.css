@@ -3,10 +3,8 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   display: block;
   width: 80%;
-  gap: 10px;
   margin: 0 auto;
   background-color: #f2f2f2;
-  font-family: sans-serif;
 }
 
 .breadcrumb {
