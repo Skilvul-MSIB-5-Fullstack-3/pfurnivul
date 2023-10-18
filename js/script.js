@@ -73,6 +73,7 @@ async function getProducts() {
         event.preventDefault();
         const productId = this.getAttribute("data-product-id");
         localStorage.setItem("productId", productId);
+        console.log(productId);
         window.location.href = "/pages/detailproduct/detailproduc-desc.html?id=" + productId + "";
       });
     });
