@@ -54,10 +54,12 @@ async function getProducts() {
           <p class="text-base font-medium my-4">${product.product_category}</p>
           <h3 class="text-base font-medium my-4">${product.product_price}</h3>
           <p class="text-base font-medium my-4">Tersedia banyak pilihan</p>
-          <a href="#" class="bg-[#ffb703] mt-8 py-2 px-4 rounded-xl border border-black text-[#023047] shadow w-max flex items-center gap-6 ml-auto"
-            ><span>Detail Product</span>
-            <img src="./assets/svg/arrow-right.svg" alt=""
-          /></a>
+          <a href="/pages/detailproduct/detailproduc-desc.html?id=${
+            product.id
+          }" class="bg-[#ffb703] mt-8 py-2 px-4 rounded-xl border border-black text-[#023047] shadow w-max flex items-center gap-6 ml-auto" data-product-id="${product.id}">
+          <span>Detail Product</span>
+          <img src="./assets/svg/arrow-right.svg" alt="" />
+        </a>
         </div>
       </div>
       </div>
@@ -65,6 +67,15 @@ async function getProducts() {
       `;
     });
     swiperproduct.innerHTML = products.join("");
+    const detailProductButtons = document.querySelectorAll("#swiper-product a");
+    detailProductButtons.forEach((button) => {
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
+        const productId = this.getAttribute("data-product-id");
+        localStorage.setItem("productId", productId);
+        window.location.href = "/pages/detailproduct/detailproduc-desc.html?id=" + productId + "";
+      });
+    });
   } catch (err) {
     console.log(err);
   }
