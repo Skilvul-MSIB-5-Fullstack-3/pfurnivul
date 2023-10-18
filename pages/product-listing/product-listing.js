@@ -15,10 +15,9 @@ async function getProductListing() {
     });
     let productCard = `
     
-
     <div class="flex justify-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 p-auto mx-(-8)">
     <a href="">
-        <img class="rounded-t-lg w-[600px] h-[300px]" src="${product.product_image}" alt="product image" />
+        <img class="rounded-t-lg w-[150px] h-[100px]" src="${product.product_image}" alt="product image" />
     </a>
     <div class="px-8 mx-8 pb-8 pt-8 mt-8">
         <a href="">
@@ -47,7 +46,7 @@ async function getProductListing() {
         Desc Product </div>
         <div class="flex items-center justify-between">
             <span class="mt-8 text-3xl font-bold text-gray-900 dark:text-white">${formattedPrice}</span>
-            <a href="" class=" mt-8 text-white bg-yellow-300 border-grey-100 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+            <a href="" class=" mt-8 text-black bg-yellow-300 border border-gray-800 hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
         </div>
     </div>
 </div>
