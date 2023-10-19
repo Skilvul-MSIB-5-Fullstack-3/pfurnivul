@@ -15,13 +15,13 @@ async function getProductListing() {
     });
     let productCard = `
     
-    <div class="lg:flex justify-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 P-8  ">
+    <div class="row lg:flex col justify-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4   ">
     <a href="">
-        <img class="rounded-t-lg w-[150px] h-[100px]" src="${product.product_image}" alt="product image" />
+        <img class="rounded-t-lg " src="${product.product_image}" alt="product image" />
     </a>
-    <div class=" pt-8 gap-4 mt-8 ml-4 pl-8">
+    <div class=" pt-8 gap-4 mt-8 ml-4 pl-8 pr-8">
         <a href="">
-            <h5 class="text-xl font-semibold  text-gray-900 dark:text-white ml-8">${product.product_name}</h5>
+            <h5 class="text-xl font-semibold  text-gray-900 dark:text-white ml-8 mr-8">${product.product_name}</h5>
         </a>
         <div class="flex items-center mt-2.5 mb-5">
             <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -41,13 +41,16 @@ async function getProductListing() {
             </svg>
             <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">${product.product_review}</span>
         </div>
-        <hr />
+        <div class=" mr-8">
+        <hr /></div>
         <div class="mt-8">
         Desc Product </div>
-        <div class="flex items-center justify-between">
-            <span class="mt-8 max-w-fit text-3xl font-bold text-gray-900 dark:text-white">${formattedPrice}</span>
-            <a href="" class=" mt-8 p-8 text-black bg-yellow-300 border border-gray-800 hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        </div>
+        <div class="flex  gap-4">
+            <span class="mt-8 max-w-fit text-3xl font-bold text-gray-900 dark:text-white">${formattedPrice}</span></div>
+           <button class=" mb-8 mt-8 p-8 text-black bg-yellow-300 border border-gray-800 hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <a href="" class="">Add to cart</a></button>
+           
+        
     </div>
 </div>
 `;
