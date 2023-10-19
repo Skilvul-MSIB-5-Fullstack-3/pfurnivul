@@ -58,6 +58,11 @@
         </div>
         <input type="radio" name="address_option" id="address_option_3" class="ml-auto">
     </div>
+    
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <button type="button" class="justify-center items-center text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:focus:ring-yellow-900" onclick="window.location.href='checkout.html'">Checkout</button>
 </div>
 
 <script>
@@ -67,6 +72,7 @@
         document.getElementById('display-full-name').textContent = addressData.fullName;
         document.getElementById('display-address-details').textContent = ` email ${addressData.email}, telephone ${addressData.telephone}, RT ${addressData.rt} RW ${addressData.rw}, Kec. ${addressData.kecamatan}, ${addressData.provinsi}, ${addressData.kodePos}`;
     }
+    
 </script>
 
 
