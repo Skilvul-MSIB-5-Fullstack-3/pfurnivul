@@ -41,16 +41,16 @@
                 </td>
                 <td class="px-6 py-4">
                     <div class="flex items-center space-x-3">
-                        <button class="minus-button inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover-bg-gray-100 focus-ring-4 focus-ring-gray-200 dark-bg-gray-800 dark-text-gray-400 dark-border-gray-600 dark-hover-bg-gray-700 dark-hover-border-gray-600 dark-focus-ring-gray-700" type="button">
+                        <button class="minus-button inline-flex items-center justify-center p-1 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover-bg-gray-100 focus-ring-4 focus-ring-gray-200 dark-bg-gray-800 dark-text-gray-400 dark-border-gray-600 dark-hover-bg-gray-700 dark-hover-border-gray-600 dark-focus-ring-gray-700" type="button" onclick="decrementQuantity();">
                             <span class="sr-only">TOMBOL MINUS</span>
                             <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16"/>
                             </svg>
                         </button>
                         <div>
-                            <input type="number" id="third_product" class="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus-ring-blue-500 focus-border-blue-500 block px-2.5 py-1 dark-bg-gray-700 dark-border-gray-600 dark-placeholder-gray-400 dark-text-white dark-focus-ring-blue-500 dark-focus-border-blue-500" placeholder="1" required data-quantity="1" readonly>
+                            <input type="number" id="third_product" class="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus-ring-blue-500 focus-border-blue-500 block px-2.5 py-1 dark-bg-gray-700 dark-border-gray-600 dark-placeholder-gray-400 dark-text-white dark-focus-ring-blue-500 dark-focus-border-blue-500" placeholder="1" required data-quantity="1" >
                         </div>
-                        <button class="plus-button inline-flex items-center justify-center h-6 w-6 p-1 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover-bg-gray-100 focus-ring-4 focus-ring-gray-200 dark-bg-gray-800 dark-text-gray-400 dark-border-gray-600 dark-hover-bg-gray-700 dark-hover-border-gray-600 dark-focus-ring-gray-700" type="button">
+                        <button class="plus-button inline-flex items-center justify-center h-6 w-6 p-1 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover-bg-gray-100 focus-ring-4 focus-ring-gray-200 dark-bg-gray-800 dark-text-gray-400 dark-border-gray-600 dark-hover-bg-gray-700 dark-hover-border-gray-600 dark-focus-ring-gray-700" type="button" onclick="incrementQuantity();">
                             <span class="sr-only">TOMBOL PLUS</span>
                             <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
@@ -72,16 +72,16 @@
         <form>
             <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
             <div class="flex items-center">
-                <input type="search" id="default-search" class="block text-sm text-gray-900 border border-gray-300 rounded-l-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Masukkan Voucher Anda" required>
-                <button type="submit" class="text-black custom-background hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-r-lg text-sm px-4 py-2 dark-bg-blue-600 dark-hover-bg-blue-700 dark-focus-ring-blue-800" style="display: flex; align-items: center;"> Voucher
+                <input type="search" id="default-search" class="block text-sm text-gray-900 border border-gray-300 rounded-l-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark-border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus-ring-blue-500 dark:focus-border-blue-500" placeholder="Masukkan Voucher Anda" required>
+                <button type="submit" class="text-black custom-background hover:bg-blue-800 focus-ring-4 focus-outline-none focus-ring-blue-300 font-medium rounded-r-lg text-sm px-4 py-2 dark-bg-blue-600 dark-hover-bg-blue-700 dark-focus-ring-blue-800" style="display: flex; align-items: center;"> Voucher
                     <img src="Asset gambar/Voucher.svg" alt="Voucher" style="margin-right: 4px; margin-left: 8px; "> 
                 </button>
             </div>
         </form>
         <div class="checkout-container">
-            <button type="button" class="text-white bg-green-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark-bg-blue-600 dark-hover-bg-blue-700 dark-focus-ring-blue-800" id="checkout-button">
+            <button type="button" class="text-white bg-green-500 hover-bg-blue-800 focus-ring-4 focus-outline-none focus-ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark-bg-blue-600 dark-hover-bg-blue-700 dark-focus-ring-blue-800" id="checkout-button">
                 <svg class="w-3.5 h-3.5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="var(--Fourth-Furnivul, #8ECAE6)" viewBox="0 0 18 21">
-                    <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
+                    <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175/.745A1/1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746/2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
                 </svg>
                 Checkout
             </button>
@@ -108,40 +108,28 @@
                     Yes, I'm sure
                 </button>
                 <button onclick="closeModal();" type="button" class="text-gray-500 bg-white hover-bg-gray-100 focus-ring-4 focus-outline-none focus-ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover-text-gray-900 focus-z-10 dark-bg-gray-700 dark-text-gray-300 dark-border-gray-500 dark-hover-text-white dark-hover-bg-gray-600 dark-focus-ring-gray-600">No, cancel</button>
-               
-
             </div>
         </div>
     </div>
 </div>
 
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 <script>
-
-function removeProduct() {
-        var container = document.getElementById("container");
-        container.remove();
+    function incrementQuantity() {
+        const quantityInput = document.getElementById("third_product");
+        const currentQuantity = parseInt(quantityInput.value);
+        if (!isNaN(currentQuantity)) {
+            quantityInput.value = currentQuantity + 1;
+        }
     }
-    
-    const quantityInput = document.querySelector("#third_product");
-    const plusButton = document.querySelector(".plus-button");
-const minusButton = document.querySelector(".minus-button");
 
-    plusButton.addEventListener("click", () => {
-    const currentQuantity = parseInt(quantityInput.value);
-    if (!isNaN(currentQuantity)) {
-        quantityInput.value = currentQuantity + 1;
+    function decrementQuantity() {
+        const quantityInput = document.getElementById("third_product");
+        const currentQuantity = parseInt(quantityInput.value);
+        if (!isNaN(currentQuantity) && currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+        }
     }
-});
-
-minusButton.addEventListener("click", () => {
-    const currentQuantity = parseInt(quantityInput.value);
-    if (!isNaN(currentQuantity) && currentQuantity > 1) {
-        quantityInput.value = currentQuantity - 1;
-    }
-});
 
     function openModal() {
         var modal = document.getElementById("popup-modal");
@@ -159,7 +147,6 @@ minusButton.addEventListener("click", () => {
             closeModal();
         });
     });
-    
 </script>
 </body>
 </html>
