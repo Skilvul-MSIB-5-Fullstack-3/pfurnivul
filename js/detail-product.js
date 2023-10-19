@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         currency: "IDR",
       });
 
+      console.log(data.id);
       const productDetail = () => {
         return `
       <div class="flex flex-col text-left justify-center mx-auto my-10">
@@ -38,7 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
   
           <div class="my-10 flex lg:flex-row flex-col justify-center lg:justify-between text-xl lg:text-3xl gap-6">
               <h1 class="font-semibold mx-auto lg:mx-0">${formattedPrice}</h1>
-              <a href="" class="flex bg-[#ffb703] px-4 py-2 rounded-lg border items-center gap-4 mx-auto lg:mx-10 w-max text-xl">
+              <a href="/pages/checkout/checkout.html?id=${data.id}"
+                 class="flex bg-[#ffb703] px-4 py-2 rounded-lg border items-center gap-4 mx-auto lg:mx-10 w-max text-xl" 
+                 data-product-id="${data.id}">
                   <img src="../../assets/svg/cart-plus.svg" alt="cart" />
                   Checkout
                   <img src="../../assets/svg/arrow-right.svg" alt="arrow" />
@@ -57,7 +60,9 @@ document.addEventListener("DOMContentLoaded", function () {
         return `
     <div class="text-left">
         <div class="mb-10">
-            <h1 class="text-xl lg:text-3xl font-semibold mb-4">${data.product_name}</h1>
+            <h1 class="text-xl lg:text-3xl font-semibold mb-4">${
+              data.product_name
+            }</h1>
             <p class="text-lg lg:text-xl font-light leading-loose" id="product-description-text">
                 ${data.product_description.slice(0, 250)}
             </p>
