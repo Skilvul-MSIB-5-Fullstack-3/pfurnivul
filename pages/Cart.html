@@ -121,14 +121,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 <script>
 
-     // Mengambil elemen input jumlah barang
 const quantityInput = document.querySelector("#third_product");
 
-// Mengambil tombol plus dan minus
 const plusButton = document.querySelector(".plus-button");
 const minusButton = document.querySelector(".minus-button");
 
-// Menambahkan event listener untuk tombol plus
 plusButton.addEventListener("click", () => {
     const currentQuantity = parseInt(quantityInput.value);
     if (!isNaN(currentQuantity)) {
@@ -136,7 +133,6 @@ plusButton.addEventListener("click", () => {
     }
 });
 
-// Menambahkan event listener untuk tombol minus
 minusButton.addEventListener("click", () => {
     const currentQuantity = parseInt(quantityInput.value);
     if (!isNaN(currentQuantity) && currentQuantity > 1) {

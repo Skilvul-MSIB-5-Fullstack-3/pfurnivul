@@ -1,0 +1,37 @@
+.flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Gunakan media query untuk mengatur tampilan pada layar dengan lebar maksimum 768px */
+/* Gunakan media query untuk mengatur tampilan pada layar dengan lebar maksimum 768px */
+@media (max-width: 300px) {
+    /* Atur gaya responsif untuk elemen-elemen di dalam container */
+    #container1, #container2 {
+        width: 100%; /* Lebar elemen akan mengisi lebar layar */
+        max-width: 90%; /* Lebar maksimum elemen (misalnya 90% dari lebar layar) */
+        margin: 0 auto; /* Pusatkan elemen di tengah */
+        height: auto; /* Tinggi elemen akan menyesuaikan kontennya */
+    }
+
+    /* Atur gaya responsif untuk tombol verifikasi */
+    #verifikasiButton {
+        display: block; /* Menampilkan tombol verifikasi */
+        margin-top: 10px; /* Jarak atas dari tombol verifikasi */
+    }
+
+    /* Atur gaya responsif untuk tombol dan ikon */
+    button {
+        width: 100%; /* Lebar tombol mengisi lebar container */
+    }
+
+    /* Atur gaya responsif untuk gambar */
+    img {
+        max-width: 100%; /* Gambar tidak akan melebihi lebar elemen induknya */
+        height: auto; /* Biarkan tinggi gambar menyesuaikan agar gambar tetap proporsional */
+    }
+}
