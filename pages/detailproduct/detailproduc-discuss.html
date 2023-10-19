@@ -28,7 +28,7 @@
     }
   </style>
   <body>
-    <div class="mx-auto">
+    <div class="mx-auto overflow-hidden">
       <nav class="bg-[#023047] relative z-40">
         <div
           class="container flex items-center justify-between mx-auto px-6 py-5"
@@ -236,14 +236,16 @@
         class="flex flex-col justify-center mx-10 lg:mx-64 my-10"
         id="product-discuss"
       ></div>
-      <div class="my-10">
+      <div
+        class="container-fluid overflow-x-hidden lg:flex lg:flex-col m-10 lg:mx-auto lg:my-10 gap-10 lg:rounded-none lg:shadow-none rounded-lg shadow"
+      >
         <h1
-          class="text-3xl font-semibold text-left lg:text-center mx-10 lg:mx-64 my-10"
+          class="text-2xl font-semibold text-left lg:text-center mx-10 lg:mx-64 my-10"
         >
           Rekomendasi produk lainnya
         </h1>
         <div class="swiper-container">
-          <div class="swiper-wrapper flex" id="swiper-product"></div>
+          <div class="swiper-wrapper flex my-4" id="swiper-product"></div>
         </div>
       </div>
     </div>
@@ -255,7 +257,7 @@
       >
         <div class="mx-auto my-8 py-10">
           <img
-            src="assets/images/logo-text.png"
+            src="../../assets/images/logo-text.png"
             class="block mx-auto lg:mx-0"
             alt=""
           />

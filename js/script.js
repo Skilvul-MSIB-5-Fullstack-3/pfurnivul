@@ -10,9 +10,13 @@ const swiper = new Swiper(".swiper-container", {
   spaceBetween: 10,
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 2000,
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 50,
+    },
     640: {
       slidesPerView: 2,
       spaceBetween: 20,
@@ -23,7 +27,7 @@ const swiper = new Swiper(".swiper-container", {
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 40,
+      spaceBetween: 10,
     },
   },
 });
@@ -46,7 +50,7 @@ async function getProducts() {
       });
       return `
       <div class="swiper-slide">
-      <div class="flex lg:flex-col flex-col p-4 bg-[#023047] border border-black rounded-xl mx-auto w-max">
+      <div class="flex lg:flex-col flex-col p-4 bg-[#023047] border border-black rounded-xl mx-auto w-[300px]">
         <img
           src="${product.product_image}"
           alt="living room"
@@ -63,7 +67,7 @@ async function getProducts() {
             product.id
           }" class="bg-[#ffb703] mt-8 py-2 px-4 rounded-xl border border-black text-[#023047] shadow w-max flex items-center gap-6 ml-auto" data-product-id="${product.id}">
           <span>Detail Product</span>
-          <img src="./assets/svg/arrow-right.svg" alt="" />
+          <img src="../../assets/svg/arrow-right.svg" alt="" />
         </a>
         </div>
       </div>
@@ -79,7 +83,8 @@ async function getProducts() {
         const productId = this.getAttribute("data-product-id");
         localStorage.setItem("productId", productId);
         console.log(productId);
-        window.location.href = "/pages/detailproduct/detailproduc-desc.html?id=" + productId + "";
+        window.location.href =
+          "/pages/detailproduct/detailproduc-desc.html?id=" + productId + "";
       });
     });
   } catch (err) {
