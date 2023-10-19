@@ -13,6 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
       rel="stylesheet"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,23 +28,26 @@
     }
   </style>
   <body>
-
-    <div class="overflow-hidden">
+    <div class="mx-auto overflow-hidden">
+      <!-- Nav -->
       <nav class="bg-[#023047] relative z-40">
         <div
           class="container flex items-center justify-between mx-auto px-6 py-5"
         >
           <!-- Desktop -->
           <div class="flex items-center">
-            <a href="index.html">
+            <a href="../../index.html">
               <img
-                src="assets/images/logo.png"
+                src="../../assets/images/logo.png"
                 class="mr-20"
                 alt="Furnivul logo"
               />
             </a>
             <div class="hidden lg:block">
-              <a class="text-white hover:text-gray-200 mx-4" href="index.html">
+              <a
+                class="text-white hover:text-gray-200 mx-4"
+                href="../../index.html"
+              >
                 Home
               </a>
               <a
@@ -68,15 +72,9 @@
           </div>
           <div class="items-center hidden lg:flex">
             <a
-              class="text-white hover:text-gray-200 mx-4"
-              href="pages/login.html"
-            >
-              Login
-            </a>
-            <a
-              class="bg-[#ffb703] text-gray-800 font-semibold py-2 px-4 rounded shadow mx-4"
-              href="pages/register.html"
-              >Register</a
+              class="bg-[#8ECAE6] text-gray-800 font-semibold py-2 px-8 rounded shadow mx-4 hover:bg-[#ffb703] hover:text-black transition duration-300"
+              href="../../index.html"
+              >Logout</a
             >
           </div>
           <!-- Mobile Toggle -->
@@ -146,133 +144,107 @@
         </div>
       </nav>
 
+      <!-- Content -->
+
+      <!-- Breadcrumb -->
       <div
-        class="container-fluid lg:flex justify-center m-10 lg:mx-auto lg:my-10 lg:rounded-none lg:shadow-none rounded-lg shadow"
+        class="flex justify-center items-center p-4 gap-4 text-lg font-light"
       >
-        <div class="flex gap-20">
-          <div class="relative">
-            <img src="assets/images/index1.png" class="rounded-md" alt="" />
-            <div class="absolute bottom-5 left-4 lg:bottom-10 lg:left-20">
-              <h1 class="lg:text-3xl lg:tracking-wide text-white text-lg">
-                Bagikan momen dengan orang tersayang
-              </h1>
-              <a href="#" class="lg:text-3xl text-white tracking-wide text-lg"
-                >Cek inspirasinya >
-              </a>
-            </div>
-          </div>
-          <div class="hidden lg:block lg:relative">
-            <div class="flex items-center justify-center">
+        <div class="border-b-2 border-b-gray-200 p-2">
+          <a href="" class="flex gap-4">
+            <h1>Cart</h1>
+            <img
+              src="../../assets/svg/blue-check.svg"
+              class="w-[21px]"
+              alt="blue-check"
+            />
+          </a>
+        </div>
+        <div class="border-b-2 border-b-gray-200 p-2">
+          <a href="" class="flex gap-4">
+            <h1>Address</h1>
+            <img
+              src="../../assets/svg/blue-check.svg"
+              class="w-[21px]"
+              alt="blue-check"
+            />
+          </a>
+        </div>
+        <div class="border-b-2 border-b-gray-400 p-2">
+          <a href="" class="flex gap-4">
+            <h1>Checkout</h1>
+            <img
+              src="../../assets/svg/check.svg"
+              class="w-[21px]"
+              alt="check"
+            />
+          </a>
+        </div>
+        <div class="p-2">
+          <a href="" class="flex gap-4">
+            <h1>Invoice</h1>
+            <img
+              src="../../assets/svg/check.svg"
+              class="w-[21px]"
+              alt="check"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Checkout -->
+
+      <div
+        class="flex justify-between p-4 text-base font-medium mx-64 gap-4 my-10"
+      >
+        <div class="flex flex-col">
+          <div class="flex border rounded-md">
+            <div>
               <img
-                src="assets/images/Low-Fi Placeholder.png"
-                class="rounded-md"
-                alt=""
+                src="../../assets/svg/ion_information.svg"
+                class="m-4"
+                alt="information"
               />
-              <div class="absolute flex flex-col justify-center mx-4">
-                <h1
-                  class="text-3xl my-4 px-4 mx-5 text-white font-bold tracking-widest leading-loose"
-                >
-                  Temukan <br />
-                  inspirasimu <br />dirumah
-                </h1>
-                <h2 class="font-semibold text-sm my-4 px-4 mx-5 text-[#ffb703]">
-                  Promo khusus untuk member Furnivul, <br />
-                  Daftar sekarang!
-                </h2>
-                <a
-                  href="/pages/detailproduct/detailproduc-desc.html"
-                  class="text-3xl my-4 px-4 mx-auto text-white tracking-wide"
-                  ><img src="assets/svg/Vector.svg" alt=""
-                /></a>
-              </div>
+            </div>
+            <div class="m-4 p-4">
+              <h1 class="text-lg mb-4">Tingkatkan keamanan akun anda!</h1>
+              <p class="mb-4">
+                Tingkatkan keamanan akun anda dengan mengaktifkan autentikasi
+                dua faktor. <br />
+                Dengan menggunakan autentikasi dua faktor dapat memberikan
+                proteksi terhadap akun anda. <br />
+                Untuk lebih lengkapnya klik disini!.
+              </p>
+              <a
+                href=""
+                class="bg-[#ffb703] py-2 px-4 border rounded-lg shadow-sm"
+                >Mengerti</a
+              >
+            </div>
+            <div>
+              <img
+                src="../../assets/svg/close cross regular.svg"
+                class="m-4"
+                alt="close"
+              />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div
-        class="container-fluid lg:flex justify-between lg:px-28 m-10 lg:mx-auto lg:my-10 gap-10 lg:rounded-none lg:shadow-none rounded-lg shadow"
-      >
-        <div class="flex flex-col lg:flex-row mx-auto lg:gap-20">
-          <img
-            class="rounded-t-lg lg:rounded-l-lg"
-            src="./assets/images/about.png"
-            alt=""
-          />
-          <div class="flex flex-col lg:p-20 p-4">
-            <p class="text-justify tracking-wide">
-              <span class="text-[#ffb703]">Furnivul</span> berdiri sejak nenek
-              moyang telah lahir menggunakan goresan
-              <br />
-              tangan sesepuh, dengan kearifan lokal yang mendunia disamping
-              <br />
-              keadaan manusia yang telah berprasangka baik ke semua.
-            </p>
-            <a
-              href="#category"
-              class="bg-[#ffb703] text-gray-800 font-semibold py-2 px-4 rounded shadow my-4 w-max flex items-center gap-6"
-              ><span>Lihat Kategori</span>
-              <img src="assets/svg/arrow-right.svg" alt=""
-            /></a>
+          <div class="flex">
+            <div>Kontz</div>
           </div>
         </div>
+
+        <div>Ringkasan pembelian</div>
       </div>
 
-      <div
-        class="container-fluid lg:flex justify-center m-10 lg:mx-auto lg:my-10 gap-10 lg:rounded-none lg:shadow-none rounded-lg shadow"
-      >
-        <div class="flex mx-auto gap-20">
-          <div class="hidden lg:block lg:relative">
-            <img
-              src="assets/images/Low-Fi Placeholder 3.png"
-              class="rounded-md"
-              alt=""
-            />
-          </div>
-          <div class="relative">
-            <img
-              src="assets/images/Low-Fi Placeholder 2.png"
-              class="rounded-md"
-              alt=""
-            />
-            <div class="absolute bottom-5 left-4 lg:bottom-10 lg:left-20">
-              <h1 class="lg:text-3xl lg:tracking-wide text-white text-lg">
-                Bawa kehangatan di ruang keluarga
-              </h1>
-              <a href="#" class="lg:text-3xl text-white tracking-wide text-lg"
-                >Cek inspirasinya >
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Categ -->
-      <div
-        class="container-fluid overflow-x-hidden lg:flex lg:flex-col m-10 lg:mx-auto lg:my-10 gap-10 lg:rounded-none lg:shadow-none rounded-lg shadow"
-      >
-        <div class="flex flex-col gap-10">
-          <div class=" mx-4 p-4 lg:mx-56">
-            <h1 class="font-semibold text-2xl p-4 mx-auto lg:text-5xl">
-              Produk Teratas
-            </h1>
-            <a href="#" class="text-blue-500 p-4 hover:text-blue-700"
-              >Lihat Selengkapnya &gt;</a
-            >
-          </div>
-          <div class="swiper-container ">
-            <div class="swiper-wrapper flex" id="swiper-product"></div>
-          </div>
-        </div>
-      </div>
-
+      <!-- Footer -->
       <footer class="bg-[#023047] p-4 text-white">
         <div
           class="flex flex-col lg:flex-row w-4/5 border-t-2 border-b-2 mt-20 mx-auto"
         >
           <div class="mx-auto my-8 py-10">
             <img
-              src="assets/images/logo-text.png"
+              src="../../assets/images/logo-text.png"
               class="block mx-auto lg:mx-0"
               alt=""
             />
@@ -413,7 +385,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-
+    <script src="../../js/script.js"></script>
+    <script src="../../js/detail-product.js"></script>
   </body>
 </html>
