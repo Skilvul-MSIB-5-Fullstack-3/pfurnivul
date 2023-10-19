@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 alt=""
               />
             </div>
-            <div class="flex flex-col lg:flex-row gap-4">
+            <div class="flex flex-col items-center lg:items-start gap-4">
               <h1>${data.product_name}</h1>
               <p>${formattedPrice}</p>
             </div>
