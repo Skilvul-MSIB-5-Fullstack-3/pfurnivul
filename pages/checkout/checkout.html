@@ -44,27 +44,24 @@
               />
             </a>
             <div class="hidden lg:block">
-              <a
-                class="text-white hover:text-gray-200 mx-4"
-                href="../../index.html"
-              >
+              <a class="text-white hover:text-gray-200 mx-4" href="../../index.html">
                 Home
               </a>
               <a
                 class="text-white hover:text-gray-200 mx-4"
-                href="pages/category.html"
+                href="../category/category.html"
               >
                 Category
               </a>
               <a
                 class="text-white hover:text-gray-200 mx-4"
-                href="pages/article.html"
+                href="../article/article.html"
               >
                 Article
               </a>
               <a
                 class="text-white hover:text-gray-200 mx-4"
-                href="pages/ourbusiness.html"
+                href="../ourbusiness/ourbusiness.html"
               >
                 Our Business
               </a>
@@ -111,32 +108,32 @@
             >
               <a
                 class="bg-[#ffb703] py-2 px-2 rounded-md text-amber-700 font-bold cursor-pointer"
-                href="#"
+                href="../../index.html"
                 >Home</a
               >
               <a
                 class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
-                href="#"
-                >About</a
-              >
-              <a
-                class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
-                href="#"
+                href="../category/category.html"
                 >Category</a
               >
               <a
                 class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
-                href="#"
+                href="../article/article.html"
+                >Article</a
+              >
+              <a
+                class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
+                href="../ourbusiness/ourbusiness.html"
                 >Our Business</a
               >
               <a
                 class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
-                href="#"
+                href="/pages/login/login.html"
                 >Login</a
               >
               <a
                 class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
-                href="#"
+                href="/pages//register/register.html"
                 >Register</a
               >
             </div>
@@ -198,7 +195,7 @@
         class="flex flex-col lg:flex-row justify-between p-0 lg:p-4 text-sm lg:text-base font-medium mx-auto lg:mx-64 gap-4 my-10"
       >
         <div class="flex flex-col border rounded-md lg:p-4">
-          <div class="hidden lg:flex border rounded-md">
+          <div class="hidden lg:flex border rounded-md" id="information">
             <div>
               <img
                 src="../../assets/svg/ion_information.svg"
@@ -212,27 +209,23 @@
                 Tingkatkan keamanan akun anda dengan mengaktifkan autentikasi
                 dua faktor. <br />
                 Dengan menggunakan autentikasi dua faktor dapat memberikan
-                proteksi terhadap akun anda. <br />
-                Untuk lebih lengkapnya klik disini!.
+                proteksi terhadap akun anda.
               </p>
-              <a
+              <button
                 href=""
                 class="bg-[#ffb703] py-2 px-4 border rounded-lg shadow-sm"
-                >Mengerti</a
+                id="toggle-information"
               >
-            </div>
-            <div>
-              <img
-                src="../../assets/svg/close cross regular.svg"
-                class="m-4 px-2 py-4"
-                alt="close"
-              />
+                Mengerti
+              </button>
             </div>
           </div>
           <div class="flex my-4">
             <div class="flex flex-col w-full" id="checkout-list"></div>
           </div>
-          <div class="flex justify-center mx-10 lg:mx-0 gap-4 lg:justify-between flex-col lg:flex-row">
+          <div
+            class="flex justify-center mx-10 lg:mx-0 gap-4 lg:justify-between flex-col lg:flex-row"
+          >
             <div class="flex items-center">
               <div class="flex justify-center lg:justify-between">
                 <input
@@ -252,7 +245,9 @@
                 </button>
               </div>
             </div>
-            <div class="relative flex justify-center lg:mx-0 mx-10 lg:justify-between">
+            <div
+              class="relative flex justify-center lg:mx-0 mx-10 lg:justify-between"
+            >
               <button
                 href=""
                 class="flex items-center gap-4 bg-[#ffb703] py-2 px-4 rounded-md"

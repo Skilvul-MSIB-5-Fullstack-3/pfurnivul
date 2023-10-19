@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const toggleInformation = document.getElementById("toggle-information");
+
+  toggleInformation.addEventListener("click", () => {
+    toggleInformation.classList.add("hidden");
+  });
+  const toggleBtn = document.getElementById("toggle-btn");
+  const mobileNavigation = document.getElementById("mobile-nav");
+
+  toggleBtn.addEventListener("click", function () {
+    mobileNavigation.classList.toggle("hidden");
+  });
+
   async function getProductById(productId) {
     try {
       const response = await fetch(
