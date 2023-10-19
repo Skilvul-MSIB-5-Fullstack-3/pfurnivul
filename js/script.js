@@ -39,6 +39,11 @@ async function getProducts() {
     console.log(data);
 
     const products = data.map(function (product) {
+      let price = product.price;
+      let formattedPrice = price.toLocaleString("id-ID", {
+        style: "currency",
+        currency: "IDR",
+      });
       return `
       <div class="swiper-slide">
       <div class="flex lg:flex-col flex-col p-4 bg-[#023047] border border-black rounded-xl mx-auto w-max">
@@ -52,7 +57,7 @@ async function getProducts() {
             product.product_name.slice(0, 30) + "..."
           }</h3>
           <p class="text-base font-medium my-4">${product.product_category}</p>
-          <h3 class="text-base font-medium my-4">${product.product_price}</h3>
+          <h3 class="text-base font-medium my-4">${formattedPrice}</h3>
           <p class="text-base font-medium my-4">Tersedia banyak pilihan</p>
           <a href="/pages/detailproduct/detailproduc-desc.html?id=${
             product.id

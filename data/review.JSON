@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "productId": 1,
+    "rating": 5,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "userId": 1,
+    "productId": 2,
+    "rating": 4,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "userId": 1,
+    "productId": 3,
+    "rating": 4,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "userId": 1,
+    "productId": 4,
+    "rating": 5,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "userId": 1,
+    "productId": 5,
+    "rating": 3,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "userId": 1,
+    "productId": 6,
+    "rating": 2,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "userId": 1,
+    "productId": 7,
+    "rating": 4,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 8,
+    "userId": 1,
+    "productId": 8,
+    "rating": 2,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 9,
+    "userId": 1,
+    "productId": 9,
+    "rating": 4,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 10,
+    "userId": 1,
+    "productId": 10,
+    "rating": 4,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 11,
+    "userId": 1,
+    "productId": 11,
+    "rating": 3,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 12,
+    "userId": 1,
+    "productId": 12,
+    "rating": 4,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 13,
+    "userId": 1,
+    "productId": 13,
+    "rating": 4,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 14,
+    "userId": 1,
+    "productId": 14,
+    "rating": 5,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 15,
+    "userId": 1,
+    "productId": 15,
+    "rating": 4,
+    "comment": "Produk ini bagus",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  },
+  {
+    "id": 16,
+    "userId": 2,
+    "productId": 1,
+    "rating": 1,
+    "comment": "Produk ini kureng",
+    "createdAt": "2021-08-01T00:00:00.000Z"
+  }
+]
