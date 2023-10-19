@@ -14,5 +14,13 @@
         "description": "Pengiriman 1-2 jam",
         "cost": 50000,
         "etd": "1-2 jam"
+    },
+    {
+        "id": "3",
+        "courier": "GoSend",
+        "service": "Same Day",
+        "description": "Pengiriman hari yang sama",
+        "cost": 20000,
+        "etd": "Hari yang sama"
     }
 ]
