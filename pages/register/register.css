@@ -1,0 +1,13 @@
+html {
+  height: 100%;
+  background-color: #023047;
+}
+
+card {
+  background-color: black;
+}
+
+button {
+  background-color: #023047;
+  color: white;
+}
