@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
         style: "currency",
         currency: "IDR",
       });
-      const productDetail = `
+
+      const productDetail = () => {
+        return `
     <div class="flex flex-col text-left justify-center mx-auto my-10">
         <h1 class="text-3xl font-semibold">${data.product_name}</h1>
         <h2 class="text-2xl">${data.product_material}</h2>
@@ -34,9 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
 
-        <div class="my-10 flex justify-between text-3xl">
-            <h1 class="font-semibold">${formattedPrice}</h1>
-            <a href="" class="flex bg-[#ffb703] px-4 py-2 rounded-lg border items-center gap-4 mx-10 text-xl">
+        <div class="my-10 flex lg:flex-row flex-col justify-center lg:justify-between text-3xl gap-6">
+            <h1 class="font-semibold mx-auto lg:mx-0">${formattedPrice}</h1>
+            <a href="" class="flex bg-[#ffb703] px-4 py-2 rounded-lg border items-center gap-4 mx-auto lg:mx-10 w-max text-xl">
                 <img src="../../assets/svg/cart-plus.svg" alt="cart" />
                 Checkout
                 <img src="../../assets/svg/arrow-right.svg" alt="arrow" />
@@ -49,6 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <img src="${data.product_image}" class="w-[300x] h-[400px] rounded-lg object-cover" alt="${data.product_name}" />
     </div>
       `;
+      };
+
       const description = () => {
         return `
     <div class="text-left">
@@ -80,7 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const descDetailContainer = document.getElementById(
         "product-description"
       );
-      detailProductContainer.innerHTML = productDetail;
+
+      detailProductContainer.innerHTML = productDetail();
       descDetailContainer.innerHTML = description();
 
       const productDescriptionText = document.getElementById(
@@ -111,5 +116,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const reviewLink = document.getElementById("review-link");
   reviewLink.href = `../../pages/detailproduct/detailproduc-review.html?id=${productId}`;
+
+  const discussLink = document.getElementById("discuss-link");
+  discussLink.href = `../../pages/detailproduct/detailproduc-discuss.html?id=${productId}`;
   getProductById(productId);
 });
