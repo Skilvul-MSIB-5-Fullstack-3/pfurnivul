@@ -15,11 +15,11 @@ async function getProductListing() {
     });
     let productCard = `
     
-    <div class="flex justify-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4  ">
+    <div class="lg:flex justify-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 P-8  ">
     <a href="">
         <img class="rounded-t-lg w-[150px] h-[100px]" src="${product.product_image}" alt="product image" />
     </a>
-    <div class=" pt-8 gap-4 mt-8">
+    <div class=" pt-8 gap-4 mt-8 ml-4 pl-8">
         <a href="">
             <h5 class="text-xl font-semibold  text-gray-900 dark:text-white ml-8">${product.product_name}</h5>
         </a>
@@ -45,8 +45,8 @@ async function getProductListing() {
         <div class="mt-8">
         Desc Product </div>
         <div class="flex items-center justify-between">
-            <span class="mt-8 text-3xl font-bold text-gray-900 dark:text-white">${formattedPrice}</span>
-            <a href="" class=" mt-8 text-black bg-yellow-300 border border-gray-800 hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+            <span class="mt-8 max-w-fit text-3xl font-bold text-gray-900 dark:text-white">${formattedPrice}</span>
+            <a href="" class=" mt-8 p-8 text-black bg-yellow-300 border border-gray-800 hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
         </div>
     </div>
 </div>
