@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const productDetail = () => {
           return `
         <div class="flex flex-col text-left justify-center mx-auto my-10">
-            <h1 class="text-3xl font-semibold">${data.product_name}</h1>
-            <h2 class="text-2xl">${data.product_material}</h2>
-            <div class="text-2xl my-10">
+            <h1 class="text-xl lg:text-3xl font-semibold">${data.product_name}</h1>
+            <h2 class="text-lg lg:text-2xl">${data.product_material}</h2>
+            <div class="text-lg lg:text-2xl my-10">
                 <div class="flex gap-2">
                     <img src="../../assets/svg/StarOutline.svg" class="" alt="" />
                     <p>${data.product_rate} dari 30 pembeli</p>
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
     
-            <div class="my-10 flex lg:flex-row flex-col justify-center lg:justify-between text-3xl gap-6">
+            <div class="my-10 flex lg:flex-row flex-col justify-center lg:justify-between text-xl lg:text-3xl gap-6">
                 <h1 class="font-semibold mx-auto lg:mx-0">${formattedPrice}</h1>
                 <a href="" class="flex bg-[#ffb703] px-4 py-2 rounded-lg border items-center gap-4 mx-auto lg:mx-10 w-max text-xl">
                     <img src="../../assets/svg/cart-plus.svg" alt="cart" />
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
         
-        <div class="flex flex-col text-left justify-center mx-auto my-10">
+        <div class="flex flex-col text-left justify-center mx-auto lg:my-10">
     
             <img src="${data.product_image}" class="w-[300x] h-[400px] rounded-lg object-cover" alt="${data.product_name}" />
         </div>
@@ -76,10 +76,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="text-left flex items-center gap-4 my-4">
                 <img src="../../assets/svg/anonym.svg" class="h-12" alt="" />
                 <div class="flex flex-col gap-1">
-                  <h1 class="text-xl font-semibold">${user.fullname}</h1>
+                  <h1 class="text-lg lg:text-xl font-semibold">${user.fullname}</h1>
                   <span class="flex">${ratingStar}</span>
                   <p
-                    class="text-lg font-light leading-loose"
+                    class="text-base lg:text-lg font-light leading-loose"
                     id="product-description-text"
                   >
                     ${review.comment}
