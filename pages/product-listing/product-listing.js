@@ -48,7 +48,7 @@ async function getProductListing() {
         <div class="flex  gap-4">
             <span class="mt-8 max-w-fit text-3xl font-bold text-gray-900 dark:text-white">${formattedPrice}</span></div>
            <button class=" mb-8 mt-8 p-8 text-black bg-yellow-300 border border-gray-800 hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            <a href="" class="">Add to cart</a></button>
+           <a href="../detailproduct/detailproduc-desc.html?id=1" class="">Detail Product</a></button>
            
         
     </div>
