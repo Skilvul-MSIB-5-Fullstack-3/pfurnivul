@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furnivul</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      overflow-x: hidden;
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+  </style>
+  <body>
+    <div class="overflow-hidden">
+      <nav class="bg-[#023047] relative z-40">
+        <div
+          class="container flex items-center justify-between mx-auto px-6 py-5"
+        >
+          <!-- Desktop -->
+          <div class="flex items-center">
+            <a href="index.html">
+              <img
+                src="assets/images/logo.png"
+                class="mr-20"
+                alt="Furnivul logo"
+              />
+            </a>
+            <div class="hidden lg:block">
+              <a class="text-white hover:text-gray-200 mx-4" href="index.html">
+                Home
+              </a>
+              <a
+                class="text-white hover:text-gray-200 mx-4"
+                href="pages/category.html"
+              >
+                Category
+              </a>
+              <a
+                class="text-white hover:text-gray-200 mx-4"
+                href="pages/article.html"
+              >
+                Article
+              </a>
+              <a
+                class="text-white hover:text-gray-200 mx-4"
+                href="pages/ourbusiness.html"
+              >
+                Our Business
+              </a>
+            </div>
+          </div>
+          <div class="items-center hidden lg:flex">
+            <a
+              class="text-white hover:text-gray-200 mx-4"
+              href="./pages/login/login.html"
+            >
+              Login
+            </a>
+            <a
+              class="bg-[#ffb703] text-gray-800 font-semibold py-2 px-4 rounded shadow mx-4"
+              href="./pages/register/register.html"
+              >Register</a
+            >
+          </div>
+          <!-- Mobile Toggle -->
+          <button
+            id="toggle-btn"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-lg text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none  "
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+
+          <!-- Mobile -->
+          <div
+            class="hidden absolute container mx-auto px-6 py-3 top-16 left-1/2 translate-x-[-50%]"
+            id="mobile-nav"
+          >
+            <div
+              class="flex flex-col gap-y-2 bg-[#111827] w-full px-4 py-4 rounded-xl"
+            >
+              <a
+                class="bg-[#ffb703] py-2 px-2 rounded-md text-amber-700 font-bold cursor-pointer"
+                href="#"
+                >Home</a
+              >
+              <a
+                class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
+                href="#"
+                >About</a
+              >
+              <a
+                class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
+                href="#"
+                >Category</a
+              >
+              <a
+                class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
+                href="#"
+                >Our Business</a
+              >
+              <a
+                class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
+                href="#"
+                >Login</a
+              >
+              <a
+                class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
+                href="#"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <!-- catergory product -->
+
+      <h1 class="font-3xl font-bold my-8 pl-8 ml-8 flex">Category product</h1>
+
+      <div class="justify-center flex mx-8 cat-product">
+        <div
+          class="p-8 w-[250px] ml-8 my-8 justify-center bg-[#023047] rounded-xl"
+        >
+          <div class="justify-center items-center">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/cat-product-svg/Mockup-1.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Living Room
+              </h5>
+            </a>
+
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-grey bg-yellow-300 rounded-lg hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow- dark:bg-yellow- dark:hover:bg-yellow- dark:focus:ring-yebg-yellow-300 mt-8"
+            >
+              Read more
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================================ -->
+
+        <div
+          class="p-8 w-[250px] mx-8 my-8 justify-center bg-[#023047] rounded-xl"
+        >
+          <div class="justify-center items-center">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/cat-product-svg/Mockup-5 (1).svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Bed Room
+              </h5>
+            </a>
+
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-grey bg-yellow-300 rounded-lg hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow- dark:bg-yellow- dark:hover:bg-yellow- dark:focus:ring-yebg-yellow-300 mt-8"
+            >
+              Read more
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================================ -->
+        <div
+          class="p-8 w-[250px] my-8 ml-8 justify-center bg-[#023047] rounded-xl"
+        >
+          <div class="justify-center items-center">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/cat-product-svg/Mockup-5 (3).svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Kitchen
+              </h5>
+            </a>
+
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-grey bg-yellow-300 rounded-lg hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow- dark:bg-yellow- dark:hover:bg-yellow- dark:focus:ring-yebg-yellow-300 mt-8"
+            >
+              Read more
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- =========================================== -->
+        <div
+          class="p-8 w-[250px] my-8 ml-8 justify-center bg-[#023047] rounded-xl"
+        >
+          <div class="justify-center items-center">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/cat-product-svg/Mockup-5 (4).svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Dining Room
+              </h5>
+            </a>
+
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-grey bg-yellow-300 rounded-lg hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow- dark:bg-yellow- dark:hover:bg-yellow- dark:focus:ring-yebg-yellow-300 mt-8"
+            >
+              Read more
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ============================================ -->
+        <div
+          class="p-8 w-[250px] my-8 ml-8 justify-center bg-[#023047] rounded-xl"
+        >
+          <div class="justify-center items-center">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/cat-product-svg/Mockup-5 (5).svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Work Space
+              </h5>
+            </a>
+
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-grey bg-yellow-300 rounded-lg hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow- dark:bg-yellow- dark:hover:bg-yellow- dark:focus:ring-yebg-yellow-300 mt-8"
+            >
+              Read more
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- ================ -->
+        <div
+          class="p-8 w-[250px] my-8 ml-8 justify-center bg-[#023047] rounded-xl"
+        >
+          <div class="justify-center items-center">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/cat-product-svg/heheh (2).svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Outdoor
+              </h5>
+            </a>
+
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-grey bg-yellow-300 rounded-lg hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow- dark:bg-yellow- dark:hover:bg-yellow- dark:focus:ring-yebg-yellow-300 mt-8"
+            >
+              Read more
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- ============================================ -->
+        <div
+          class="p-8 w-[250px] my-8 ml-8 justify-center bg-[#023047] rounded-xl"
+        >
+          <div class="justify-center items-center">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/cat-product-svg/Mockup-5 (5).svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Laundry room
+              </h5>
+            </a>
+
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-grey bg-yellow-300 rounded-lg hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow- dark:bg-yellow- dark:hover:bg-yellow- dark:focus:ring-yebg-yellow-300 mt-8"
+            >
+              Read more
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- ======================================== -->
+        <div
+          class="p-8 w-[250px] my-8 ml-8 justify-center bg-[#023047] rounded-xl"
+        >
+          <div class="justify-center items-center">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/cat-product-svg/heheh (4).svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Childroom
+              </h5>
+            </a>
+
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-grey bg-yellow-300 rounded-lg hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow- dark:bg-yellow- dark:hover:bg-yellow- dark:focus:ring-yebg-yellow-300 mt-8"
+            >
+              Read more
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- ============================= -->
+        <div
+          class="p-8 w-[250px] my-8 ml-8 justify-center bg-[#023047] rounded-xl"
+        >
+          <div class="justify-center items-center">
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="../assets/cat-product-svg/heheh (1).svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Accessories
+              </h5>
+            </a>
+
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-grey bg-yellow-300 rounded-lg hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow- dark:bg-yellow- dark:hover:bg-yellow- dark:focus:ring-yebg-yellow-300 mt-8"
+            >
+              Read more
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- ============================ -->
+      </div>
+      <!-- cat product  -->
+
+      <footer class="bg-[#023047] p-4 text-white">
+        <div
+          class="flex flex-col lg:flex-row w-4/5 border-t-2 border-b-2 mt-20 mx-auto"
+        >
+          <div class="mx-auto my-8 py-10">
+            <img
+              src="assets/images/logo-text.png"
+              class="block mx-auto lg:mx-0"
+              alt=""
+            />
+            <p
+              class="tracking-widest p-4 lg:py-10 font-thin lg:font-bold mt-4 text-justify"
+            >
+              <span class="text-[#ffb703]">Furnivul</span> berdiri sejak nenek
+              moyang <br />
+              telah lahir menggunakan goresan <br />
+              tangan sesepuh, dengan kearifan lokal yang mendunia.
+            </p>
+          </div>
+          <div class="flex justify-center my-8 mx-auto lg:py-10">
+            <div class="grid grid-cols-3 gap-10 lg:gap-32">
+              <div class="flex flex-col">
+                <a class="mb-8 w-max underline" href="#home">Home</a>
+                <a class="my-4" href="#">Bedroom</a>
+                <a class="my-4" href="#">Livingroom</a>
+                <a class="my-4" href="#">Kitchen</a>
+                <a class="my-4" href="#">Diningroom</a>
+              </div>
+              <div class="flex flex-col">
+                <a class="mb-8 w-max underline" href="#category">Category</a>
+                <a class="my-4" href="#">Workspace</a>
+                <a class="my-4" href="#">Outdoor</a>
+                <a class="my-4" href="#">Children</a>
+                <a class="my-4" href="#">Accessories</a>
+              </div>
+              <div class="flex flex-col">
+                <a class="mb-8 w-max underline" href="#business"
+                  >Our Business</a
+                >
+                <a class="my-4" href="#">Article</a>
+                <a class="my-4" href="#">Investment</a>
+                <a class="my-4" href="#">Resources</a>
+                <a class="my-4" href="#">Cookies</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row lg:justify-between w-4/5 mt-4 mx-auto"
+        >
+          <p>
+            &copy; Full-Stack Web Development - 3rd Team 2023. All rights
+            reserved.
+          </p>
+          <div class="socials flex justify-between gap-12 my-4 lg:my-0">
+            <div>
+              <a href="https://www.instagram.com/afalupanama/" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-instagram"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/naufal-alief/"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-linkedin"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-youtube"
+                >
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+                  ></path>
+                  <polygon
+                    points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+                  ></polygon>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/naufalalief" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-github"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
