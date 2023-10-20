@@ -28,7 +28,7 @@
     }
   </style>
   <body>
-    <div class="mx-auto overflow-hidden">
+    <div class="mx-auto">
       <!-- Nav -->
       <nav class="bg-[#023047] relative z-40">
         <div
@@ -44,27 +44,24 @@
               />
             </a>
             <div class="hidden lg:block">
-              <a
-                class="text-white hover:text-gray-200 mx-4"
-                href="../../index.html"
-              >
+              <a class="text-white hover:text-gray-200 mx-4" href="../../index.html">
                 Home
               </a>
               <a
                 class="text-white hover:text-gray-200 mx-4"
-                href="pages/category.html"
+                href="../category/category.html"
               >
                 Category
               </a>
               <a
                 class="text-white hover:text-gray-200 mx-4"
-                href="pages/article.html"
+                href="../article/article.html"
               >
                 Article
               </a>
               <a
                 class="text-white hover:text-gray-200 mx-4"
-                href="pages/ourbusiness.html"
+                href="../ourbusiness/ourbusiness.html"
               >
                 Our Business
               </a>
@@ -111,32 +108,32 @@
             >
               <a
                 class="bg-[#ffb703] py-2 px-2 rounded-md text-amber-700 font-bold cursor-pointer"
-                href="#"
+                href="../../index.html"
                 >Home</a
               >
               <a
                 class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
-                href="#"
-                >About</a
-              >
-              <a
-                class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
-                href="#"
+                href="../category/category.html"
                 >Category</a
               >
               <a
                 class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
-                href="#"
+                href="../article/article.html"
+                >Article</a
+              >
+              <a
+                class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
+                href="../ourbusiness/ourbusiness.html"
                 >Our Business</a
               >
               <a
                 class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
-                href="#"
+                href="/pages/login/login.html"
                 >Login</a
               >
               <a
                 class="hover:bg-slate-100/20 py-2 px-2 rounded-md text-white hover:text-gray-200 font-semibold cursor-pointer"
-                href="#"
+                href="/pages//register/register.html"
                 >Register</a
               >
             </div>
@@ -148,7 +145,7 @@
 
       <!-- Breadcrumb -->
       <div
-        class="flex justify-center items-center p-4 gap-4 text-lg font-light"
+        class="flex justify-center items-center p-4 gap-4 text-sm mx-10 lg:mx-auto lg:text-lg font-light"
       >
         <div class="border-b-2 border-b-gray-200 p-2">
           <a href="" class="flex gap-4">
@@ -195,14 +192,14 @@
       <!-- Checkout -->
 
       <div
-        class="flex justify-between p-4 text-base font-medium mx-64 gap-4 my-10"
+        class="flex flex-col lg:flex-row justify-between p-0 lg:p-4 text-sm lg:text-base font-medium mx-auto lg:mx-64 gap-4 my-10"
       >
-        <div class="flex flex-col">
-          <div class="flex border rounded-md">
+        <div class="flex flex-col border rounded-md lg:p-4">
+          <div class="hidden lg:flex border rounded-md" id="information">
             <div>
               <img
                 src="../../assets/svg/ion_information.svg"
-                class="m-4"
+                class="m-4 px-2 py-4"
                 alt="information"
               />
             </div>
@@ -212,29 +209,98 @@
                 Tingkatkan keamanan akun anda dengan mengaktifkan autentikasi
                 dua faktor. <br />
                 Dengan menggunakan autentikasi dua faktor dapat memberikan
-                proteksi terhadap akun anda. <br />
-                Untuk lebih lengkapnya klik disini!.
+                proteksi terhadap akun anda.
               </p>
-              <a
+              <button
                 href=""
                 class="bg-[#ffb703] py-2 px-4 border rounded-lg shadow-sm"
-                >Mengerti</a
+                id="toggle-information"
               >
-            </div>
-            <div>
-              <img
-                src="../../assets/svg/close cross regular.svg"
-                class="m-4"
-                alt="close"
-              />
+                Mengerti
+              </button>
             </div>
           </div>
-          <div class="flex">
-            <div>Kontz</div>
+          <div class="flex my-4">
+            <div class="flex flex-col w-full" id="checkout-list"></div>
+          </div>
+          <div
+            class="flex justify-center mx-10 lg:mx-0 gap-4 lg:justify-between flex-col lg:flex-row"
+          >
+            <div class="flex items-center">
+              <div class="flex justify-center lg:justify-between">
+                <input
+                  type="text"
+                  name="voucher"
+                  class="border-gray-400 rounded-l-lg w-max lg:w-80 p-2"
+                  id="voucher"
+                  placeholder="Loh Ga Bahaya Tah?"
+                  disabled
+                />
+              </div>
+              <div>
+                <button
+                  class="border border-l-none border-gray-400 rounded-r-lg p-2 bg-[#8ECAE6]"
+                >
+                  Digunakan
+                </button>
+              </div>
+            </div>
+            <div
+              class="relative flex justify-center lg:mx-0 mx-10 lg:justify-between"
+            >
+              <button
+                href=""
+                class="flex items-center gap-4 bg-[#ffb703] py-2 px-4 rounded-md"
+                id="toggle-shipping"
+              >
+                <span>Pilih Pengiriman</span>
+                <img src="../../assets/svg/ChevronDownOutline.svg" alt="" />
+              </button>
+              <div>
+                <div
+                  class="hidden absolute bottom-10 -right-5 lg:bottom-11 lg:right-0 w-max bg-slate-100 p-2 rounded-md border h-40 overflow-y-auto"
+                  id="shipping-list"
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div>Ringkasan pembelian</div>
+        <div class="flex flex-col border p-4 rounded-md h-full">
+          <div class="mb-4">Ringkasan Belanja</div>
+          <div class="flex justify-between gap-10 mb-2">
+            <p>Total Harga:</p>
+            <p id="total-harga"></p>
+          </div>
+          <div class="flex justify-between gap-10 mb-2">
+            <p>Total Ongkos Kirim:</p>
+            <p id="total-ongkir"></p>
+          </div>
+          <div class="flex justify-between gap-10 mb-4">
+            <p>Potongan Harga:</p>
+            <p id="potongan-harga"></p>
+          </div>
+          <hr class="border-2 border-solid border-black mb-4" />
+          <div class="flex justify-between gap-10">
+            <p>Total Harga:</p>
+            <p id="total-bayar"></p>
+          </div>
+          <button
+            id="pilih-pembayaran"
+            class="w-full text-center mx-auto px-4 py-2 my-4 bg-[#ffb703] rounded-lg shadow"
+          >
+            Pilih Pembayaran
+          </button>
+          <div>
+            <p>
+              Dengan menyelesaikan transaksi ini, saya <br />
+              menyetujui
+              <a href="" class="text-blue-400"
+                >syarat dan ketentuan yang berlaku</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- Footer -->
@@ -383,6 +449,7 @@
         </div>
       </footer>
     </div>
+    <script src="../../js/checkout.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="../../js/script.js"></script>

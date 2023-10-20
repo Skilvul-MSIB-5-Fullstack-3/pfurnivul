@@ -1,0 +1,32 @@
+.flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 425px) {
+    #container1, #container2 {
+        width: 100%; 
+        max-width: 70%;
+        margin: 0 auto; 
+        height: auto; 
+    }
+
+    #verifikasiButton {
+        display: block; 
+        margin-top: 10px; 
+    }
+
+    button {
+        width: 100%; 
+    }
+
+    
+    img {
+        max-width: 100%; 
+        height: auto; 
+    }
+}
