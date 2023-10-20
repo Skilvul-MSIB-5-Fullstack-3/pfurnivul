@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="register.js" defer></script>
+    <link rel="stylesheet" href="./register.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ============= form login ============= -->
+    <section
+      class="bg-cyan-800 dark:bg-gray-900 pt-8 justify-center bg-background bg-no-repeat bg-cover bg-center p-8"
+    >
+      <div
+        class="justify-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg: gap-8 lg:gap-16 mt-8"
+      >
+        <div class="mt-8 pt-8">
+          <div
+            class="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800 mt-8 pt-8 justify-center"
+          >
+            <div
+              class="flex gap-4 mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center justify-center"
+            >
+              <img src="../assets/logo-login.svg" alt="" />
+            </div>
+            <form class="mt-8 space-y-6 mx-3" action="#">
+              <div>
+                <label
+                  class="block mb-2 text-3xl font-bold text-gray-900 dark:text-white justify-center"
+                  >Sign Up</label
+                >
+                <label
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white mt-4"
+                >
+                  Your name</label
+                >
+                <input
+                  id="name"
+                  placeholder="name"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white mt-4"
+                  >Email address</label
+                >
+                <input
+                  id="email"
+                  placeholder="name@mail.com"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white mt-4"
+                  >Your password</label
+                >
+                <input
+                  id="password"
+                  placeholder="••••••••"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required
+                />
+              </div>
+
+              <div class="flex items-start mt-4 mb-4">
+                <div class="flex items-center h-5">
+                  <input
+                    id="remember"
+                    aria-describedby="remember"
+                    name="remember"
+                    type="checkbox"
+                    class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
+                    required
+                  />
+                </div>
+                <div class="ml-2 text-sm">
+                  <label class="font-medium text-gray-500 dark:text-gray-400"
+                    >Remember this device</label
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="ml-auto text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
+                >
+                  &nbsp; Lost Password?</a
+                >
+              </div>
+              <button
+                type="submit"
+                id="btn-submit"
+                class="mx-auto px-8 py-3 text-base bg-blue-900 font-medium text-center text-white rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-3"
+              >
+                Register
+              </button>
+              <div class="text-sm font-medium text-gray-900 dark:text-white">
+                have an acoount?
+                <a
+                  href="../login/login.html"
+                  class="text-blue-600 hover:underline dark:text-blue-500"
+                  >Login</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============= end form login ============= -->
+  </body>
+</html>

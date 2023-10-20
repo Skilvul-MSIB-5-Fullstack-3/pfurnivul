@@ -1,0 +1,10 @@
+.custom-background {
+    background-color: #FFB703;
+  }
+  
+  @media (min-width: 200px) {
+    #default-search, #checkout-button {
+        min-width: 10rem;
+    }
+}
+

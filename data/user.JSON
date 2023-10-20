@@ -1,0 +1,26 @@
+[
+    {
+     "createdAt": "2023-10-12T23:34:03.231Z",
+     "fullname": "Kodok Kanaeru",
+     "username": "kodokk",
+     "password": "kodokk123",
+     "telephone": "081234444332",
+     "province": "Jawa Barat",
+     "district": "Jakarta Selatan",
+     "subdistrict": "Kebayoran Baru",
+     "zipcode": 12345,
+     "id": "1"
+    },
+    {
+     "createdAt": "2023-10-13T03:36:42.656Z",
+     "fullname": "Manusia Hitam",
+     "username": "blakky",
+     "password": "blakky123",
+     "telephone": "081234444333",
+     "province": "Jawa Tengah",
+     "district": "Sleman",
+     "subdistrict": "Mlati",
+     "zipcode": 54321,
+     "id": "2"
+    }
+   ]
