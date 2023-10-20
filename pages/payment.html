@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment </title>
+    <link rel="stylesheet" href="payment.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
+</head>
+<body>
+    <div class="flex justify-center items-center mt-10 sm:w-10 w-full ">
+        <div class="text-center items-center">
+            <div id="container1" class="p-4 border border-gray-300 rounded-lg mx-4" style="width: 500px; height: 450px; flex-shrink: 0; border-radius: 34px; background: var(--white, #FFF); box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);">
+                <h1 class="mt-5 mb-10" style="color: #000; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-style: normal; font-weight: 500; line-height: 150%;">Continue with your preferred payment method</h1>
+                <button id="scanButton" type="button" style="width: 400px; height: 50px; flex-shrink: 0;" class="text-black mb-5 bg-white hover-bg-gray-100 border border-gray-200 focus-ring-4 focus-outline-none focus-ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 text-center inline-flex items-center dark-bg-gray-800 dark-border-gray-700 dark-text-white dark-hover-bg-gray-700 mr-2">
+                    <img src="Asset gambar/QRIS.png" width="35px" style="margin-right: 200px;" alt="QR Code">
+                    Scan QR Code
+                    <svg class="w-4 h-4 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </button>
+
+            <button type="button" style="width: 400px; height: 50px; flex-shrink: 0;" class="text-black mb-5 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus-ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 text-center inline-flex items-center dark:bg-gray-800 dark-border-gray-700 dark-text-white dark-hover-bg-gray-700 mr-2">                
+                <img src="Asset gambar/Wallet.svg" width="35px" style="margin-right: 250px;" alt="QR Code">
+                Wallet
+                <svg class="w-4 h-4 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </button>
+
+            <button type="button" style="width: 400px; height: 50px; flex-shrink: 0;" class="text-black mb-5 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus-ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 text-center inline-flex items-center dark:bg-gray-800 dark-border-gray-700 dark-text-white dark-hover-bg-gray-700 mr-2">                
+                <img src="Asset gambar/cards.svg" width="35px" style="margin-right: 250px;" alt="QR Code">
+                Cards
+                <svg class="w-4 h-4 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </button>
+
+            <button type="button" style="width: 400px; height: 50px; flex-shrink: 0;" class="text-black mb-5 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus-ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 text-center inline-flex items-center dark:bg-gray-800 dark-border-gray-700 dark-text-white dark-hover-bg-gray-700 mr-2">                
+                <img src="Asset gambar/cards.svg" width="35px" style="margin-right: 250px;" alt="QR Code">
+                Paypal
+                <svg class="w-4 h-4 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </button>
+            </div>
+        </div>
+        
+
+        <div class="text-center items-center">
+            <div id="container2" class="p-4 border border-gray-300 rounded-lg mx-4" style="width: 500px; height: 450px; flex-shrink: 0; border-radius: 34px; background: var(--white, #FFF); box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div style="display: flex; align-items: center;">
+                    <img src="Asset gambar/qrisS.png" alt="QR Code" style="width: 200px; height: 50px; margin-right: 150px;">
+                    <img src="Asset gambar/GPN.png" alt="GPN" style="width: 50px; height: 50px;">
+        
+                </div>
+                <h1 class="mt-7" style="color: #000; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-style: normal; font-weight: 500; line-height: 150%;">FURNIVUL</h1>
+                <h1 class="" style="color: #000; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-style: normal; font-weight: 500; line-height: 150%;">NMID : 277482119012836219</h1>
+                <div style="display: flex; align-items: center; margin-top: 10px;"></div>
+                <img src="Asset gambar/QRR.svg" alt="GPN" style="width: 200px; height: 200px; margin: 0 auto;">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center"> 
+        <button id="verifikasiButton" type="button" class="mt-10 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" style="display: none;">Verifikasi Pembayaran</button>    </div>
+        
+
+   
+   <script>
+    const container1 = document.getElementById('container1');
+    const container2 = document.getElementById('container2');
+    const scanButton = document.querySelector('#scanButton');
+    const verifikasiButton = document.getElementById('verifikasiButton');
+
+    verifikasiButton.addEventListener('click', function () {
+        // Redirect ke halaman donepayment.html
+        window.location.href = 'donepayment.html';
+    });
+
+    container2.style.display = 'none';
+
+    scanButton.addEventListener('click', () => {
+        container1.style.display = 'inline-block';
+        container2.style.display = 'inline-block';
+        verifikasiButton.style.display = 'inline-block'; 
+    });
+
+    scanButton.addEventListener('click', () => {
+    container1.style.display = 'inline-block';
+    container2.style.display = 'inline-block';
+    verifikasiButton.style.display = 'inline-block'; 
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+</html>
